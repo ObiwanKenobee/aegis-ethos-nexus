@@ -2,41 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* AEGIS 2077 Design System - Renaissance x Futurism x Indigenous Intelligence
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Digital Parchment Base */
+    --background: 45 23% 97%;
+    --foreground: 25 30% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Earth Tones */
+    --card: 42 15% 95%;
+    --card-foreground: 25 30% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 42 15% 95%;
+    --popover-foreground: 25 30% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Solar Halo Primary */
+    --primary: 35 65% 45%;
+    --primary-foreground: 45 23% 97%;
+    --primary-glow: 45 85% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Forest Secondary */
+    --secondary: 120 25% 25%;
+    --secondary-foreground: 45 23% 97%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Warm Muted */
+    --muted: 35 15% 88%;
+    --muted-foreground: 25 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Amber Accent */
+    --accent: 45 85% 65%;
+    --accent-foreground: 25 30% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Cosmic Destructive */
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 45 23% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Warm Borders */
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 35 65% 45%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-solar: linear-gradient(135deg, hsl(35 65% 45%), hsl(45 85% 65%));
+    --gradient-earth: linear-gradient(180deg, hsl(25 30% 12%), hsl(120 25% 25%));
+    --gradient-cosmic: linear-gradient(135deg, hsl(240 50% 25%), hsl(280 40% 35%));
+    --gradient-parchment: linear-gradient(180deg, hsl(45 23% 97%), hsl(42 15% 95%));
+
+    /* Shadows */
+    --shadow-solar: 0 10px 30px -5px hsl(35 65% 45% / 0.3);
+    --shadow-earth: 0 20px 50px -10px hsl(25 30% 12% / 0.2);
+    --shadow-cosmic: 0 15px 40px -10px hsl(240 50% 25% / 0.4);
+
+    /* Animation */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

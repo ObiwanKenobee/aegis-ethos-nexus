@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -62,6 +63,26 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-solar': 'var(--gradient-solar)',
+				'gradient-earth': 'var(--gradient-earth)',
+				'gradient-cosmic': 'var(--gradient-cosmic)',
+				'gradient-parchment': 'var(--gradient-parchment)',
+			},
+			boxShadow: {
+				'solar': 'var(--shadow-solar)',
+				'earth': 'var(--shadow-earth)',
+				'cosmic': 'var(--shadow-cosmic)',
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)',
+			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+				'ubuntu': ['Ubuntu', 'sans-serif'],
+				'nunito': ['Nunito Sans', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
